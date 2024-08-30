@@ -1,0 +1,189 @@
+/* Resetando margens e paddings para uniformidade */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo com fundo gradiente e fonte futurista */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 20px;
+    font-smoothing: antialiased;
+}
+
+/* Estilo do cabeçalho com texto centralizado e espaçamento */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #00c6ff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #a8d0e6;
+}
+
+/* Estilo da navegação com links estilizados */
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #00c6ff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Estilo das seções com títulos destacados e margem */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #00c6ff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00c6ff;
+    padding-bottom: 10px;
+}
+
+section p, section ul, section blockquote {
+    margin: 10px 0;
+}
+
+/* Estilo das listas de linha do tempo e créditos */
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: '▶';
+    margin-right: 10px;
+    color: #00c6ff;
+}
+
+/* Estilo das imagens em linha */
+section#imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaçamento entre as imagens */
+    justify-content: center;
+}
+
+section#imagens img {
+    width: calc(25% - 10px); /* Ajuste o valor para mais ou menos imagens na linha */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+section#imagens img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo das citações */
+blockquote {
+    font-style: italic;
+    color: #a8d0e6;
+    border-left: 4px solid #00c6ff;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 1px solid #00c6ff;
+    color: #a8d0e6;
+    font-size: 0.9rem;
+}
+
+/* Estilo dos links na seção de Sites */
+section#sites ul {
+    padding: 0;
+}
+
+section#sites ul li {
+    margin-bottom: 10px;
+}
+
+section#sites ul li a {
+    color: #00c6ff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff; /* Linha branca embaixo do link */
+    padding-bottom: 5px;
+    display: inline-block;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+section#sites ul li a:hover {
+    color: #f0f0f0;
+    border-color: #f0f0f0; /* Linha branca no hover */
+}
+
+/* Estilo da seção de Créditos */
+section#creditos {
+    text-align: center;
+    padding: 20px;
+}
+
+section#creditos h2 {
+    font-size: 2rem;
+    color: #00c6ff;
+    margin-bottom: 15px;
+}
+
+section#creditos .creditos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#creditos img.imagem-creditos {
+    max-width: 400px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+section#creditos ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#creditos ul li {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
